@@ -27,7 +27,7 @@ public class DeliveryNotificationController {
 			@NotNull @Parameter(in = ParameterIn.QUERY, description = "", required = false, schema = @Schema()) @Valid @RequestParam(value = "trackingId", required = true) String trackingId
 			) {
 		
-		Twilio.init("ACf52f89bcc2450064e9d273bb046b0c55", "fd2d4b5beeb35366c76f635df246ab64");
+		Twilio.init("ACf52f89bcc2450064e9d273bb046b0c55", "610a6af5b1ae7161ef6c76efe4cb99f8");
 		Message message = Message.creator(new com.twilio.type.PhoneNumber("whatsapp:+"+whtsAppNo),
 				new com.twilio.type.PhoneNumber("whatsapp:+14155238886"), buildDeliveryMessage(customerName,trackingId)).create();
 		System.out.println(message.getSid());
