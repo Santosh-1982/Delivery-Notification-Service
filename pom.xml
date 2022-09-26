@@ -12,6 +12,10 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<junit.jupiter.version>5.5.2</junit.jupiter.version>
+		<junit.platform.version>1.5.2</junit.platform.version>
+		<mockito.version>2.24.0</mockito.version>
+		<junit-vintage-engine>4.12.1</junit-vintage-engine>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -84,11 +88,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>io.swagger.core.v3</groupId>
-			<artifactId>swagger-annotations</artifactId>
-			<version>2.1.7</version>
-		</dependency>
 		<dependency>
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct</artifactId>
